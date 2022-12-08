@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #1f1d32;
+  --light-color: #fff;
+  --light-background: #f9f8ff;
+  --accent-color: #36c7ce;
+  --accent-color-hover: #95b0b2;
+  --light-purple: #adaff4;
+  --dark-purple: #777bbb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: var(--light-background);
+}
+
+.nav__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.nav__section h1 {
+  font-size: 1rem;
+}
+
+.nav__links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav__links li a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.nav__links li a:hover {
+  color: var(--accent-color);
+}
+
+/* form section */
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: var(--dark-purple);
+  color: var(--light-color);
+}
+
+.input__wrapper {
+  display: flex;
+}
+
+.input__wrapper input {
+  padding: 10px;
+  border: 1px solid var(--light-purple);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  width: 500px;
+}
+
+.dropdown__wrapper select {
+  padding: 10px;
+  border: 1px solid var(--light-purple);
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  width: 500px;
+}
+
+.dropdown__wrapper h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .input__wrapper input {
+    width: 300px;
+  }
+  .dropdown__wrapper select {
+    width: 300px;
+  }
+
+  img {
+    width: 350px;
+  }
+}
+
+.btn {
+  padding: 15px;
+  border: 1px solid var(--accent-color-hover);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  width: 150px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2em;
+}
+
+img {
+  margin: auto;
+}

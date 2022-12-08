@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="CSS/spinner.css" />
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>AI Image Generator</title>
+</head>
+
+<body>
+  <nav class="nav__section">
+    <div class="nav__container">
+      <h1>Open AI Image Generator</h1>
+    </div>
+    <div class="nav__links">
+      <ul>
+        <li><a href="https://beta.openai.com/docs/introduction">Open API Docs</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  <form id="form-image" class="form__container">
+    <h1>Describe an Image</h1>
+    <div class="input__wrapper">
+      <input type="text" id="prompt" placeholder="Describe an image" />
+    </div>
+    <div class="dropdown__wrapper">
+      <h1>Image Size</h1>
+      <select name="size" id="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </div>
+    <button id="generate-image-btn" class="btn" type="submit">Generate</button>
+  </form>
+
+  <section class="image">
+    <div class="image__container">
+      <h2 class="msg"></h2>
+      <img src="" alt="" id="image" />
+    </div>
+    </div>
+  </section>
+
+  <div class="spinner"></div>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
